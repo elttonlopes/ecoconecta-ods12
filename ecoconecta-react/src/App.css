@@ -1,0 +1,49 @@
+/* 1. Variáveis Nativas do CSS3 (:root) */
+:root {
+    --cor-primaria: #198754;
+    --cor-primaria-hover: #146c43;
+    --cor-texto: #212529;
+    --cor-fundo-suave: #f8f9fa;
+}
+
+/* 2. Ajustes Globais e Tipografia */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* 3. Estilização Personalizada de Componentes */
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste proporcional de imagens nos cards */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* 4. Transições e Efeitos CSS3 (Hover Effects) */
+.hover-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 5. Acessibilidade Visual (Foco via Teclado) */
+a:focus-visible, 
+button:focus-visible, 
+input:focus-visible, 
+select:focus-visible, 
+textarea:focus-visible {
+    outline: 3px solid #ffc107 !important;
+    outline-offset: 2px;
+}

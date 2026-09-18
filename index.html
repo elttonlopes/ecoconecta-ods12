@@ -1,0 +1,296 @@
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--ajuste da pagina a tela do dispositivo-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EcoConecta - ODS12</title>
+
+        <!--import bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+            <!--icons bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <!--folha css-->
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        
+<header>
+    <!--menus-navegacao-->
+<header class="sticky-top bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light container" aria-label="Navegação Principal">
+        
+        <!-- 1. Logotipo / Identidade -->
+        <a class="navbar-brand d-flex align-items-center fw-bold text-success fs-4" href="#home">
+            <i class="bi bi-recycle me-2 fs-3" aria-hidden="true"></i> EcoConecta
+        </a>
+
+        <!-- 2. Botão Hambúrguer (visível apenas em celulares e tablets) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao" aria-controls="menuNavegacao" aria-expanded="false" aria-label="Alternar menu de navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 3. Container dos Links (recolhe no celular, expande no desktop) -->
+        <div class="collapse navbar-collapse" id="menuNavegacao">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ods">ODS 12</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#guia">Guia de Descarte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pontos">Pontos de Coleta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Participar</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+<main>
+
+<!-- Seção do Banner Principal -->
+    <section id="home" class="bg-success text-white py-5">
+        <div class="container py-4">
+            <div class="row align-items-center gy-4">
+                
+                <!-- Coluna 1: Texto de Apresentação e Botões (7 colunas no pc) -->
+                <div class="col-lg-7">
+                    <span class="badge bg-light text-success fw-bold px-3 py-2 mb-3">ODS 12 • Consumo Responsável</span>
+                    <h1 class="display-4 fw-bold mb-3">Transforme seu resíduo em impacto positivo</h1>
+                    <p class="lead mb-4">Aprenda a descartar corretamente materiais recicláveis, orgânicos e e-lixo. Encontre ecopontos na sua região e ajude a fortalecer a economia circular local.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#pontos" class="btn btn-warning btn-lg fw-bold text-dark">Buscar Ponto de Coleta</a>
+                        <a href="#guia" class="btn btn-outline-light btn-lg">Aprender a Separar</a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Imagem Ilustrativa (5 colunas no Desktop) -->
+                <div class="col-lg-5 text-center">
+                    <img src="img/hero-banner.jpg" alt="Mãos segurando o planeta Terra com ícones de reciclagem" class="img-fluid rounded-4 shadow-lg border border-3 border-white">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- Seção 1: Contextualização do ODS 12 -->
+<section id="ods" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+            <h2 class="h1 fw-bold text-dark mb-3">O Compromisso com o ODS 12</h2>
+            <p class="text-secondary fs-5">O Objetivo de Desenvolvimento Sustentável 12 busca assegurar padrões de produção e de consumo sustentáveis.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center hover-card">
+                    <div class="feature-icon bg-success-subtle text-success rounded-circle mx-auto mb-3">
+                        <i class="bi bi-trash3-fill fs-2"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-2">Redução de Resíduos</h3>
+                    <p class="text-secondary small mb-0">Incentivo à diminuição da geração de lixo por meio da prevenção, reciclagem e reuso.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center hover-card">
+                    <div class="feature-icon bg-success-subtle text-success rounded-circle mx-auto mb-3">
+                        <i class="bi bi-house-heart-fill fs-2"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-2">Educação e Consciência</h3>
+                    <p class="text-secondary small mb-0">Capacitação da comunidade para escolhas de consumo mais sustentáveis no dia a dia.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4 text-center hover-card">
+                    <div class="feature-icon bg-success-subtle text-success rounded-circle mx-auto mb-3">
+                        <i class="bi bi-diagram-3-fill fs-2"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-2">Economia Circular</h3>
+                    <p class="text-secondary small mb-0">Integração entre geradores de resíduos, cooperativas e indústrias de reciclagem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 2: Guia Prático de Descarte -->
+<section id="guia" class="py-5">
+    <div class="container">
+        <h2 class="h1 fw-bold text-center mb-5">Guia Rápido de Separação</h2>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/coleta-seletiva.jpg" class="card-img-top" alt="Lixeiras coloridas de coleta seletiva para papel, plástico, vidro e metal">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Recicláveis</span>
+                        <h3 class="h5 card-title fw-bold">Papel, Plástico e Metal</h3>
+                        <p class="card-text text-secondary">Lave os recipientes para retirar resíduos orgânicos antes de encaminhar à coleta.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/compostagem.jpg" class="card-img-top" alt="Cascas de frutas e alimentos sendo colocados em composteira">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Orgânicos</span>
+                        <h3 class="h5 card-title fw-bold">Resíduos Orgânicos</h3>
+                        <p class="card-text text-secondary">Restos de alimentos podem ser transformados em adubo natural por meio da compostagem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/ponto-entrega.jpg" class="card-img-top" alt="Pilhas, baterias e placas de circuitos velhas">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">Especiais</span>
+                        <h3 class="h5 card-title fw-bold">Lixo Eletrônico e Óleo</h3>
+                        <p class="card-text text-secondary">Pilhas, baterias e óleo de cozinha exigem pontos de entrega voluntária (PEV) específicos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 3: Busca de Pontos de Coleta -->
+<section id="pontos" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center gy-4">
+            
+            <!-- Coluna 1: Formulário de Pesquisa -->
+            <div class="col-lg-5">
+                <h2 class="h1 fw-bold mb-3">Encontre o Ecoponto mais próximo</h2>
+                <p class="text-secondary mb-4">Localize cooperativas parceiras, pontos de entrega de óleo e coletores de e-lixo na sua região.</p>
+                
+                <form onsubmit="return false;" aria-label="Formulário de Busca de Pontos de Coleta">
+                    <div class="mb-3">
+                        <label for="buscaBairro" class="form-label fw-semibold">Bairro ou CEP:</label>
+                        <div class="input-group">
+                            <input type="text" id="buscaBairro" class="form-control form-control-lg" placeholder="Ex: Centro...">
+                            <button class="btn btn-success px-4" type="button" id="btnBuscar">
+                                <i class="bi bi-search" aria-hidden="true"></i> Buscar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="selectTipo" class="form-label fw-semibold">Tipo de Resíduo:</label>
+                        <select id="selectTipo" class="form-select form-select-lg">
+                            <option selected>Todos os materiais</option>
+                            <option value="1">Plástico e Metal</option>
+                            <option value="2">Eletrônicos (E-lixo)</option>
+                            <option value="3">Óleo de Cozinha</option>
+                            <option value="4">Orgânicos / Compostagem</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Coluna 2: Lista de Resultados Mockup -->
+            <div class="col-lg-7">
+                <div class="bg-white p-4 rounded-4 shadow-sm">
+                    <h3 class="h5 fw-bold mb-3 border-bottom pb-2">Ecopontos Cadastrados</h3>
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item py-3">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h4 class="h6 mb-1 fw-bold text-success">Cooperativa Recicla Cidade</h4>
+                                <span class="badge bg-success-subtle text-success">0.8 km</span>
+                            </div>
+                            <p class="mb-1 text-secondary small">Rua das Flores, 123 - Centro</p>
+                            <small class="text-muted"><i class="bi bi-clock me-1"></i> Seg a Sex: 08h às 17h • Aceita: Plástico, Papel, Metal</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h4 class="h6 mb-1 fw-bold text-success">PEV E-Lixo & Baterias</h4>
+                                <span class="badge bg-success-subtle text-success">2.3 km</span>
+                            </div>
+                            <p class="mb-1 text-secondary small">Av. Principal, 2050 - Bairro Universitário</p>
+                            <small class="text-muted"><i class="bi bi-clock me-1"></i> Seg a Sáb: 09h às 19h • Aceita: Eletrônicos, Pilhas</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Seção 4: Formulário de Participação / Cadastro -->
+<section id="contato" class="py-5">
+    <div class="container" style="max-width: 700px;">
+        <div class="card border-0 shadow-lg p-4 p-md-5 rounded-4">
+            <h2 class="h2 fw-bold text-center mb-2">Cadastre seu Ponto ou Seja Voluntário</h2>
+            <p class="text-center text-secondary mb-4">Quer mapear um novo ponto de coleta ou colaborar com projetos ambientais da sua comunidade?</p>
+            
+            <form onsubmit="return false;" aria-label="Formulário de Cadastro e Contato">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="nome" class="form-label fw-semibold">Nome Completo</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label fw-semibold">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="interesse" class="form-label fw-semibold">Tipo de Interesse</label>
+                        <select class="form-select" id="interesse">
+                            <option selected>Cadastrar Ponto de Coleta</option>
+                            <option>Ser Voluntário em Ações</option>
+                            <option>Dúvidas e Sugestões</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="mensagem" class="form-label fw-semibold">Mensagem / Endereço do Ponto</label>
+                        <textarea class="form-control" id="mensagem" rows="3" placeholder="Escreva os detalhes aqui..."></textarea>
+                    </div>
+                    <div class="col-12 text-center mt-4">
+                        <button type="submit" class="btn btn-success btn-lg w-100 fw-bold">Enviar Cadastro</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- Rodapé Semântico -->
+<footer class="bg-dark text-white py-4 border-top border-success border-4">
+    <div class="container">
+        <div class="row gy-3 align-items-center">
+            
+            <!-- Coluna 1: Direitos Autorais, Autores e Vínculo Acadêmico (8 colunas) -->
+            <div class="col-md-8 text-center text-md-start">
+                <p class="mb-1 fw-semibold">&copy; 2026 EcoConecta — Projeto Acadêmico de Desenvolvimento Web</p>
+                <p class="mb-1 small text-white-50">
+                    <strong>Desenvolvido por:</strong> Elton Antonio Lopes e Silva &bull; Lucas Costa Martins
+                </p>
+                <small class="text-secondary">Alinhado aos Objetivos de Desenvolvimento Sustentável (ODS 12 - ONU)</small>
+            </div>
+
+            <!-- Coluna 2: Voltar ao Topo (4 colunas) -->
+            <div class="col-md-4 text-center text-md-end">
+                <a href="#home" class="text-white text-decoration-none fw-semibold">
+                    <i class="bi bi-arrow-up-circle fs-5 me-1" aria-hidden="true"></i> Voltar ao topo
+                </a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+    <!-- Script JavaScript do Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+    </html>
+</head>
